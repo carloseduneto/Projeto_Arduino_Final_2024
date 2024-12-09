@@ -40,7 +40,8 @@ Após montar o hardware, configure o Arduino com o código abaixo:
 #define dir1 8  
 #define dir2 10  
 #define pin_S1 7  
-#define pin_S2 6  
+#define pin_S2 6
+//Ajuste o valor da variável velocidade para alterar a rapidez do robô (intervalo: 0-255).  
 int velocidade = 150;  
 
 void setup() {  
@@ -65,12 +66,9 @@ void loop() {
 
 ```
 
-## 📝 **Dica**  
-Ajuste o valor da variável `velocidade` no código para alterar a rapidez do robô (intervalo: 0-255).  
 
-
-## 🎉 **Resultado Final**  
-Depois de montar e programar, teste seu robô criando um trajeto com fita preta em uma superfície branca 🏁. Assista ao robô em ação 🚀!    
+## 📹 **Resultado Final**  
+ <a href="https://www.w3schools.com">Demonstração do projeto</a> 
 
 
 ## 📎 **Referência** 
