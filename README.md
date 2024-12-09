@@ -1,5 +1,5 @@
 # 🤖 **Robô Seguidor de Linha – Tutorial Passo a Passo** 🚗  
-_Eletrogate - Publicado em 15/07/2020 | Atualizado em: 25/05/2023_  
+_Carlos Eduardo Neto, Felipe Passagem e Hiago Rossi_  
 
 
 ## 🛠️ **Introdução**  
