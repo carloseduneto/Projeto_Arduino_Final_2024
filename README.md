@@ -35,35 +35,59 @@ Um seguidor de linha é um robô capaz de percorrer trajetos baseados em marcaç
 Após montar o hardware, configure o Arduino com o código abaixo:  
 
 ```cpp
-#define M1 9  
-#define M2 11  
-#define dir1 8  
-#define dir2 10  
-#define pin_S1 7  
+//Definição dos pinos de controle do motor
+#define M1 9 // Pino_Velocidade 1º Motor ( 0 a 255)_ Porta IN2 ponte H;
+#define M2 11 //Pino_Velocidade 2º Motor ( 0 a 255) _ Porta IN4 ponte H;
+#define dir1 8 //Pino_Direção do 1º Motor: Para frente / Para trás (HIGH ou LOW)_ porta IN1 ponte H;
+#define dir2 10 //Pino_Direção do 2º Motor: Para frente / Para trás (HIGH ou LOW)_ porta IN3 ponte H;
+
+//Definição dos pinos dos sensores
+#define pin_S1 7
 #define pin_S2 6
-//Ajuste o valor da variável velocidade para alterar a rapidez do robô (intervalo: 0-255).  
-int velocidade = 150;  
+bool Sensor1 = 0;
+bool Sensor2 = 0;
 
-void setup() {  
-  pinMode(M1, OUTPUT); pinMode(M2, OUTPUT);  
-  pinMode(dir1, OUTPUT); pinMode(dir2, OUTPUT);  
-  pinMode(pin_S1, INPUT); pinMode(pin_S2, INPUT);  
-}  
+//variável responsável por controlar a velocidade dos motores
+int velocidade = 100;
 
-void loop() {  
-  bool Sensor1 = digitalRead(pin_S1);  
-  bool Sensor2 = digitalRead(pin_S2);  
+void setup(){
+//Setamos os pinos de controle dos motores como saída
+pinMode(M1, OUTPUT);
+pinMode(M2, OUTPUT);
+pinMode(dir1, OUTPUT);
+pinMode(dir2, OUTPUT);
 
-  if (Sensor1 == 0 && Sensor2 == 0) {  
-    analogWrite(M1, velocidade);  
-    analogWrite(M2, velocidade);  
-  } else if (Sensor1 == 1 && Sensor2 == 0) {  
-    analogWrite(M1, 0); analogWrite(M2, velocidade);  
-  } else if (Sensor1 == 0 && Sensor2 == 1) {  
-    analogWrite(M1, velocidade); analogWrite(M2, 0);  
-  }  
+//Setamos a direção inicial do motor como 0, isso fará com que ambos os motores girem para frente
+digitalWrite(dir1, LOW); //era LOW
+digitalWrite(dir2, LOW); //era LOW
+
+//Setamos os pinos dos sensores como entrada
+pinMode(pin_S1, INPUT);
+pinMode(pin_S2, INPUT);
 }
 
+void loop(){
+//Neste processo armazenamos o valor lido pelo sensor na variável que armazena tais dados.
+Sensor1 = digitalRead(pin_S1);
+Sensor2 = digitalRead(pin_S2);
+
+//Aqui está toda a lógica de comportamento do robô: Para a cor branca atribuímos o valor 0 e, para a cor preta, o valor 1.
+if((Sensor1 == 0) && (Sensor2 == 0)){ // Se detectar na extremidade das faixas duas cores brancas
+analogWrite(M1, velocidade); // Ambos motores ligam na mesma velocidade
+analogWrite(M2, velocidade);
+}
+
+if((Sensor1 == 1) && (Sensor2 == 0)){ // Se detectar um lado preto e o outro branco
+analogWrite(M1, 0); // O motor 1 desliga
+analogWrite(M2, velocidade); // O motor 2 fica ligado, fazendo assim o carrinho virar
+}
+
+if((Sensor1 == 0) && (Sensor2 == 1)){ // Se detectar um lado branco e o outro preto
+analogWrite(M1, velocidade); //O motor 1 fica ligado
+analogWrite(M2, 0); // O motor 2 desliga, fazendo assim o carrinho virar no outro sentido
+}
+
+}
 ```
 
 
