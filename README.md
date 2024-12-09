@@ -70,6 +70,7 @@ void loop() {
   }  
 }
 
+```cpp
 
 ## 📝 **Dica**  
 Ajuste o valor da variável `velocidade` no código para alterar a rapidez do robô (intervalo: 0-255).  
