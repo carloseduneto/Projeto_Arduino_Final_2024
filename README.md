@@ -69,3 +69,24 @@ void loop() {
     analogWrite(M1, velocidade); analogWrite(M2, 0);  
   }  
 }
+
+
+## 📝 **Dica**  
+Ajuste o valor da variável `velocidade` no código para alterar a rapidez do robô (intervalo: 0-255).  
+
+---
+
+## 🎉 **Resultado Final**  
+Depois de montar e programar, teste seu robô criando um trajeto com fita preta em uma superfície branca 🏁. Assista ao robô em ação 🚀!  
+
+---
+
+## 🙌 **Conclusão**  
+Com o Arduino e alguns componentes básicos, construímos um robô funcional para aprender sobre robótica e automação industrial 🏗️.  
+
+---
+
+## 📸 **Compartilhe!**  
+Mostre o resultado do seu projeto nas redes sociais e nos marque no Instagram: [@eletrogate](https://instagram.com/eletrogate).  
+
+---
