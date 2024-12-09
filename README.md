@@ -1,11 +1,6 @@
-# Projeto_Arduino_Final_2024
-
-Robô Seguidor de Linha - Tutorial Completo. Blog Eletrogate. Disponível em: <https://blog.eletrogate.com/robo-seguidor-de-linha-tutorial-completo/>.
-
 # 🤖 **Robô Seguidor de Linha – Tutorial Passo a Passo** 🚗  
 _Eletrogate - Publicado em 15/07/2020 | Atualizado em: 25/05/2023_  
 
----
 
 ## 🛠️ **Introdução**  
 
@@ -14,7 +9,6 @@ O Arduino é uma plataforma super popular para prototipagem eletrônica devido �
 ### O que é um robô seguidor de linha?  
 Um seguidor de linha é um robô capaz de percorrer trajetos baseados em marcações no chão, utilizando sensores que captam contrastes de cor 🎨 e enviam essas informações ao microcontrolador. Com lógica de programação 🔧, o robô "decide" o caminho a seguir.
 
----
 
 ## 🧩 **Montagem do Robô**  
 
@@ -35,7 +29,6 @@ Um seguidor de linha é um robô capaz de percorrer trajetos baseados em marcaç
 4️⃣ Monte os suportes e o interruptor 🏗️.  
 5️⃣ Conecte os sensores 📡 ao chassi.  
 
----
 
 ## 💻 **Programação**  
 
@@ -75,19 +68,10 @@ void loop() {
 ## 📝 **Dica**  
 Ajuste o valor da variável `velocidade` no código para alterar a rapidez do robô (intervalo: 0-255).  
 
----
 
 ## 🎉 **Resultado Final**  
-Depois de montar e programar, teste seu robô criando um trajeto com fita preta em uma superfície branca 🏁. Assista ao robô em ação 🚀!  
+Depois de montar e programar, teste seu robô criando um trajeto com fita preta em uma superfície branca 🏁. Assista ao robô em ação 🚀!    
 
----
 
-## 🙌 **Conclusão**  
-Com o Arduino e alguns componentes básicos, construímos um robô funcional para aprender sobre robótica e automação industrial 🏗️.  
-
----
-
-## 📸 **Compartilhe!**  
-Mostre o resultado do seu projeto nas redes sociais e nos marque no Instagram: [@eletrogate](https://instagram.com/eletrogate).  
-
----
+## 📎 **Referência** 
+Robô Seguidor de Linha - Tutorial Completo. Blog Eletrogate. Disponível em: <https://blog.eletrogate.com/robo-seguidor-de-linha-tutorial-completo/>.
