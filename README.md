@@ -16,18 +16,16 @@ Um seguidor de linha é um robô capaz de percorrer trajetos baseados em marcaç
 - 🟦 1x Uno R3 + Cabo USB  
 - 🏎️ 1x Ponte H L298N  
 - 🚗 1x Kit Chassi 2WD  
-- 🔋 1x Adaptador Bateria 9V  
 - 👀 2x Sensores Infravermelhos  
 - ⚙️ 20x Jumpers (Macho/Macho e Macho/Fêmea)  
-- 🔌 1x Bateria 9V e 4x Pilhas AA  
-- 🛠️ Chave Philips e Ferro de Solda  
+- 🔌 1x Conector de energia
+- 🛠️ Chave Philips
 
 ### 🔧 **Etapas de Montagem:**  
 1️⃣ Fixe os pilares de suporte 🛠️.  
 2️⃣ Parafuse a roda boba 🔩.  
-3️⃣ Solde os fios nos motores 🔗.  
-4️⃣ Monte os suportes e o interruptor 🏗️.  
-5️⃣ Conecte os sensores 📡 ao chassi.  
+3️⃣ Monte os suportes e o interruptor 🏗️.
+4️⃣ Conecte os sensores 📡 ao chassi.  
 
 
 ## 💻 **Programação**  
