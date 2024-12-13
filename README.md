@@ -4,10 +4,10 @@ _Carlos Eduardo Neto, Felipe Passagem e Hiago Rossi_
 
 ## 🛠️ **Introdução**  
 
-O Arduino é uma plataforma super popular para prototipagem eletrônica devido à sua **facilidade de uso** e flexibilidade. Nesse tutorial, vamos criar um robô seguidor de linha 🚶‍♂️ e explorar na prática como essas máquinas, amplamente usadas em fábricas 🏭, operam.
+O Arduino é uma plataforma super popular para prototipagem eletrônica devido à sua **facilidade de uso** e flexibilidade. Nesse tutorial, vamos criar um robô seguidor de linha e explorar na prática como essas máquinas, amplamente usadas em fábricas, operam.
 
 ### O que é um robô seguidor de linha?  
-Um seguidor de linha é um robô capaz de percorrer trajetos baseados em marcações no chão, utilizando sensores que captam contrastes de cor 🎨 e enviam essas informações ao microcontrolador. Com lógica de programação 🔧, o robô "decide" o caminho a seguir.
+Um seguidor de linha é um robô capaz de percorrer trajetos baseados em marcações no chão, utilizando sensores que captam contrastes de cor e enviam essas informações ao microcontrolador. Com lógica de programação, o robô "decide" o caminho a seguir.
 
 
 ## 🧩 **Montagem do Robô**  
