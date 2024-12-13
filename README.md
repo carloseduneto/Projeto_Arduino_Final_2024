@@ -25,7 +25,6 @@ Um seguidor de linha é um robô capaz de percorrer trajetos baseados em marcaç
 1️⃣ Fixe os pilares de suporte 🛠️.  
 2️⃣ Parafuse a roda boba 🔩.  
 3️⃣ Monte os suportes e o interruptor 🏗️.
-
 4️⃣ Conecte os sensores 📡 ao chassi.  
 
 
